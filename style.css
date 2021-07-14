@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-container {
+    display: flow-root;
+    background: linear-gradient(-45deg, #f12525, #eb1289, #4a25f1, #25f1be, #06f3a4);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container {
+    margin-top: 35vh;
+}
+
+.main-text {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 0.2vw;
+    text-transform: lowercase;
+}
+
+.contact-container-wrapper {
+	margin: auto;
+    margin-top: 8vh;
+	width: 50%;
+}
+
+.contact-container {
+    align-items: center;
+	/* width: 50%; */
+    height: 40px;
+}
+
+.icon {
+    color: white;
+}
+
+.icon:hover {
+    color: black;
+}
+
+@keyframes gradient {
+    0% {
+		background-position: 100% 100%;
+	}
+    5% {
+		background-position: 90% 90%;
+	}
+    25% {
+		background-position: 100% 200%;
+	}
+	50% {
+		background-position: 200% 100%;
+	}
+	75% {
+		background-position: 50% 50%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
